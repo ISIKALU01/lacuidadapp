@@ -3,20 +3,26 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev -p 5001",
+    "dev": "next dev -p 8001",
     "build": "next build",
     "start": "next start",
     "lint": "next lint"
   },
   "dependencies": {
+    "@fortawesome/free-solid-svg-icons": "^6.5.2",
+    "@fortawesome/react-fontawesome": "^0.2.2",
+    "@mui/icons-material": "^5.15.20",
+    "@mui/material": "^5.15.20",
     "@nextui-org/navbar": "^2.0.32",
     "@nextui-org/react": "^2.4.1",
     "@nextui-org/system": "^2.2.1",
     "@nextui-org/theme": "^2.2.5",
     "framer-motion": "^11.2.10",
     "next": "14.2.3",
-    "react": "^18",
-    "react-dom": "^18"
+    "react": "^18.3.1",
+    "react-dom": "^18",
+    "react-responsive": "^10.0.0",
+    "responsive": "^2.0.0"
   },
   "devDependencies": {
     "eslint": "^8",
