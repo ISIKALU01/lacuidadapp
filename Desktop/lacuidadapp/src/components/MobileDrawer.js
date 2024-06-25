@@ -5,7 +5,7 @@ import { faXmark } from '@fortawesome/free-solid-svg-icons';
 export default function MobileDrawer({ isOpen, onClose }) {
   return (
     <div
-      className={`fixed flex flex-col justify-center items-center z-10 top-0 right-0 h-full w-full bg-primary text-secondary transition-transform duration-300 transform ${
+      className={`fixed flex flex-col justify-center items-center z-20 top-0 right-0 h-full w-full bg-primary text-secondary transition-transform duration-300 transform ${
         isOpen ? 'translate-x-0' : 'translate-x-full'
       }`}
     >

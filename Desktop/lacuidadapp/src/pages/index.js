@@ -1,23 +1,27 @@
 import Head from "next/head";
-// import Header from "../components/Header";
 import Navbar from "@/components/navigation";
 import ImageCarousel from "@/components/imageCarousel";
+import Intro from "../components/Services"
+import ImageGrid from "../components/Ourservices"
+import Footer from "../components/Footer"
 
 export default function Home() {
   const images = [
     {
-      src: '/mainsec.jpg',
+      src: '/carousel1.jpg',
       alt: 'Image 1',
+      text: 'Delivering Exceptional Results'
     },
     {
-      src: '/mainsec2.jpg',
+      src: '/carousel2.jpg',
       alt: 'Image 2',
+      text: 'A Collaborative Partner'
     },
     {
-      src: '/mainsec3.jpg',
+      src: '/carousel3.jpg',
       alt: 'Image 3',
+      text: 'Productive and Efficient Solutions'
     },
-    // Add more image objects as needed
   ];
 
   return (
@@ -27,7 +31,10 @@ export default function Home() {
         <link rel="icon" type="image/ico" href="/img/goals.ico" />
       </Head>
       <Navbar />
-      {/* <ImageCarousel images={images} /> */}
+      <ImageCarousel images={images} />
+      <Intro />
+      <ImageGrid />
+      <Footer />
     </>
   );
 }
